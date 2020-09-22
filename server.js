@@ -35,13 +35,13 @@ app.post('/login', function(req,res){
 	
 	if (username==mockUsername && password==mockPassword){
 		res.json({
-			success: true;
-			message: 'password and username match!';
+			success: true,
+			message: 'password and username match!',
 			token: 'encrypted token goes here'
 		})
 	} else {
 		res.json({
-			success: false;
+			success: false,
 			message: 'password and username do not match'
 		})
 	}
